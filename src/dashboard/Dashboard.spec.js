@@ -24,6 +24,5 @@ it('cannot be closed or opened if it is locked', () => {
   fireEvent.click(openCloseBtn);
   fireEvent.click(lockUnlockBtn);
   fireEvent.click(openCloseBtn);
-  console.log('Has Open Close button resolved', openCloseBtn)
   expect(openCloseBtn.textContent).toBe('Open Gate');
 });
